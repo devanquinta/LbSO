@@ -1,0 +1,290 @@
+*cd..   , volta ao arquivo pai
+*cd arquivo , abre o arquivo
+*cd -   ,volta arquivo anterior monstranto arquivoque está
+*cd . ,mostra arquivo atual
+*cd ~ , volta para oarquivo home
+
+**pwd - mostrar o caminho atual 
+
+**ls - listar conteúdo da pasta atual 
+
+**cd - mudar / navegar entre diretórios 
+
+**mkdir - criar diretório
+
+**rmdir/rm - remover diretório 
+
+Remover o "arquivo1.bkp" no diretório atual.
+$ rm arquivo1.bkp
+ 
+Remover 02 arquivos no diretório atual.
+$ rm arquivo1 arquivo2 
+ 
+Remover todos arquivos em /tmp.
+$ rm /tmp/* ~rodrigo
+ 
+Remover todos os arquivos do diretório atual.
+$ rm * 
+ 
+Remover todos os arquivos do diretório /home/rodrigo.
+$ rm /home/rodrigo/* .
+ 
+Remover todos os arquivos e sub-diretórios do diretório /var/log/ .
+# rm -R /var/log/* 
+ 
+Remover todo o diretório /log.
+# rm -R /var/log/
+ 
+Força a remoção de todo o diretório /log.
+# rm -rf /var/log/
+
+
+**pushd - empilha a pasta/diretório atual 
+
+**popd - desempilha a pasta atual 
+
+**mv - move arquivos e/ou pastas 
+
+Mover  o "arquivo1" para dentro do diretório /home/rodrigo.
+$ mv arquivo1 /home/rodrigo
+ 
+Move 02 arquivos no diretório atual para outro diretório, no caso "/home/rodrigo".
+$ mv arquivo1 arquivo2 /home/rodrigo
+ 
+Mover todos arquivos em /tmp para o home do usuário "rodrigo".
+$ mv /tmp/* ~rodrigo
+ 
+Mover todos os arquivos do diretório atual para /opt.
+$ mv * /opt
+ 
+Mover todos os arquivos do diretório /home/rodrigo para o diretório atual.
+$ mv /home/rodrigo/* .
+ 
+Mover todos os arquivos e sub-diretórios do diretório /var/log/ para /tmp.
+$ mv -R /var/log/* /tmp
+ 
+Move um diretório "/etc/apache2/" incluindo todos os arquivos e sub-diretório para outro diretório "/mnt/backup/".
+$ mv -R /etc/apache2/ /mnt/backup/
+ 
+Move todos os arquivos e sub-diretórios do diretório /opt/teamviewer9/* para home do usuário "rodrigo".
+$ mv -Rv /opt/teamviewer9/* ~rodrigo/
+ 
+Move o diretório "/opt/teamviewer9/" incluindo todos os arquivos e sub-diretório para home do usuário "rodrigo".
+$ mv -Rv /opt/teamviewer9/ ~rodrigo/
+
+
+**cp - copia arquivos e/ou pastas /  cp -r (copia todos os arquivos e pastas)
+Realizar uma cópia no diretório atual.
+$ cp arquivo1 arquivo1.bkp
+ 
+Copiar o arquivo1 para dentro do diretório /home/rodrigo.
+$ cp arquivo1 /home/rodrigo
+ 
+Copiar 02 arquivos no diretório atual para outro diretório, no caso "/home/rodrigo".
+$ cp arquivo1 arquivo2 /home/rodrigo
+ 
+Copiar todos arquivos em /tmp para o home do usuário "rodrigo".
+$ cp /tmp/* ~rodrigo
+ 
+Copiar todos os arquivos do diretório atual para /opt.
+$ cp * /opt
+ 
+Copiar todos os arquivos do diretório /home/rodrigo para o diretório em uso.
+$ cp /home/rodrigo/* .
+ 
+Copiar todos os arquivos e sub-diretórios do diretório /var/log/ para /tmp.
+$ cp -R /var/log/* /tmp
+ 
+Copiar o diretório "/etc/apache2/" incluindo todos os arquivos e sub-diretórios para outro diretório "/mnt/backup/".
+$ cp -R /etc/apache2/ /mnt/backup/
+ 
+Copiar todos os arquivos e sub-diretórios do diretório /opt/teamviewer9/* para home do usuário "rodrigo".
+$ cp -Rv /opt/teamviewer9/* ~rodrigo/
+ 
+Copiar o diretório "/opt/teamviewer9/" incluindo todos os arquivos e sub-diretório para home do usuário "rodrigo".
+$ cp -Rv /opt/teamviewer9/ ~rodrigo/
+ 
+* O "v" no comando é para mostrar na tela o que está sendo executado no momento.
+
+ln – Cria links entre arquivos
+
+cat – Mostra o conteúdo de um arquivo, ou faz uma cópia deste arquivo, ou uma junção.
+
+**head, tail – Mostra o começo e fim do arquivo
+O comando head, como o nome diz (cabeçalho), mostra o começo de um arquivo. O comando 
+tail (calda) mostra o final de um arquivo. Por padrão, ambos comandos mostram as 10 
+linhas correspondentes.
+
+**more, less – Visualiza arquivos por páginas
+No less, a paginação funciona como em uma página de manual (na verdade, a visualização
+das páginas de manual é feita com o less): é possível utilizar as setas para navegar
+no documento para cima e para baixo, utilizar as teclas PgUp e PgDown para paginar, 
+o comando /pesquisa para pesquisar por uma palavra no documento e a tecla q para sair.
+
+**touch é frequentemente usado para definir ou atualizar o acesso, alterar e modificar
+as datas de arquivos. Por predefinição, restaura o timestamp de um arquivo para
+corresponder à hora atual.
+$ touch -t 03201600 meuarquivo
+No entanto, você também pode criar um arquivo vazio usando o touch: $ touch <filename>
+
+
+**file – Indica o tipo de arquivo
+
+**touch – Muda timestamps, cria arquivos, ex touch arquivo.txt,
+touch -t 03201600 meuarquivo
+
+***Redirecionamento de E/S
+
+do_something < input-fil
+
+do_something > output-file
+
+do_something> all-output-file 2> & 1
+
+Pipe
+
+Command1 | Command2 | Command3
+
+**find procura arquivos, pode uasar condiçoes para procurar 
+
+find /usr -name gcc
+
+ find /usr -type f -name test1
+
+**comprimir arquivos zip 
+zip backup *
+
+zip -r backup.zip ~
+
+**Desconpactar 
+unzip backup.zip
+
+O linux possui os principais editores:
+- nano, um editor baseado em texto - gedit, um editor gráfico - vi e emacs, 
+dois editores avançados com interfaces gráficas e de texto. 
+
+
+Criando arquivos sem usar um editor
+$ echo linha um> myfile 
+$ echo linha dois >> myfile 
+$ echo linha três >> myfile A segunda maneira é usar o cat combinado 
+com redirecionamento:
+
+CTRL-G: Exibe a tela de ajuda 
+CTRL-O: Gravar em um arquivo 
+CTRL-X: Sair de um arquivo 
+CTRL-R: Inserir conteúdo de outro arquivo para o buffer atual 
+CTRL-C: Cancela os comandos anteriores.
+$ cat << EOF > myfile > Linha um > Linha dois > Linha três > EOF
+
+**cat
+
+cat readme.txt exibirá o conteúdo de readme.txt no terminal. Muitas vezes,
+o objetivo principal do cat, no entanto, é combinar (concatenar) vários arquivos juntos.
+Você pode executar as ações listadas na tabela a seguir usando cat:
+
+cat arquivo 
+
+Este comando imprime na tela o conteúdo do arquivo. 
+
+cat > arquivo Este comando cria um arquivo recebendo o texto digitado logo após o 
+comando. Para sair do arquivo criado utilize Ctrl + D. 
+
+cat arquivo1 >> arquivo2 
+
+Este comando faz com que o arquivo2 receba o conteúdo do arquivo1. Obs.: as 
+informações contidas no arquivo2 são sobrescritas pelas do arquivo1. 
+
+cat arquivo1 >> arquivo2 
+
+Este comando adiciona o conteúdo do arquivo1 no final do arquivo2. 
+
+Dicas: Poderá ser utilizado direcionamento para os comandos more ou less, para 
+visualizar o arquivo de uma maneira em que você possa ler todo ele, assim como com o 
+grep: 
+
+cat /etc/group | more
+cat /etc/group | less
+cat /etc/group | grep adm 
+
+**echo
+echo strig
+echo string > newfile
+echo string >> existingfile
+echo $ variavel
+
+**sort 
+sort é usado para reorganizar as linhas de um arquivo de texto em ordem ascendente ou
+decrescente, de acordo com uma chave de classificação. Você também pode classificar
+por campos específicos de um arquivo. A chave de classificação padrão é a ordem dos 
+caracteres ASCII (ou seja, essencialmente em ordem alfabética). sort pode ser usado da
+seguinte forma:
+
+sort <filename>
+
+cat file1 file2 | sort
+
+sort -r <filename>
+
+sort -k 3 <filename>
+
+
+**uniq
+uniq é usado para remover linhas duplicadas em um arquivo de texto e é útil para 
+simplificar a exibição de texto.
+uniq requer que as entradas duplicadas sejam consecutivas. Assim, muitas vezes é 
+executado primeiro sort e, em seguida, canaliza a saída em uniq; Se sort for passado
+com a opção -u, ele pode fazer tudo isso em uma única etapa.
+
+sort file1 file2 | uniq> file3
+ou sort -u file1 file2> file3
+
+Para contar o número de entradas duplicadas, use o seguinte comando:
+uniq -c filename e para mostrar as ocorrências
+mais populares uniq -d filename
+
+**paste
+paste pode ser usado para criar um único arquivo contendo todas as três colunas.
+As diferentes colunas são identificadas com base em delimitadores 
+(espaçamento usado para separar dois campos). Por exemplo, os delimitadores podem ser
+um espaço em branco, um tab ou enter. Na imagem fornecida, um único espaço é usado 
+como delimitador em todos os arquivos.
+paste também aceita as seguintes opções:
+-d, que especificam uma lista de delimitadores a serem usados ??em vez de tabulações 
+para separar valores consecutivos em uma única linha. Cada delimitador é usado por 
+sua vez; Quando a lista foi esgotada, a pasta começa novamente no primeiro delimitador. 
+-s, faz com que o paste anexe os dados em série em vez de em paralelo; Ou seja, de
+forma horizontal, e não vertical.
+
+**grep
+grep é amplamente utilizado como uma das principais ferramentas de pesquisa de texto. 
+Ele verifica os arquivos de padrões especificados e pode ser usado com expressões 
+regulares, bem como strings simples, como mostrado na tabela:
+
+grep [pattern] <filename>
+
+grep -v [pattern] <filename>
+
+grep [0-9] <filename>
+
+grep -c 3 [pattern] <filename>
+
+
+grep e expressoes regulares
+grep '[a-zA-Z]'         {qualquer linha com pelo menos uma letra}    
+grep '[^a-zA-Z0-9]        {qualquer coisa que não seja uma letra ou número}    
+grep '[0-9]\{3\}-[0-9]\{4\}' {999-9999, como números de telefone}    
+grep '^.$'               {linhas com exatamente 1 caracter}    
+grep '"smug"'                 {'smug' com aspas duplas}    
+grep '"*smug"*'            {'smug', com ou sem aspas}    
+grep '^\.'         {qualquer linha que inicia com ponto "."}    
+grep '^\.[a-z][a-z]' {linha inicia com "." e 2 letras}
+
+
+**strings
+
+strings book1.xls | grep my_string
+
+
+
+
