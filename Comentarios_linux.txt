@@ -21,7 +21,9 @@ git pull
 
 **mkdir - criar diretório
 
-**rmdir/rm - remover diretório 
+**rmdir/rm - remover diretório
+
+**touch  , cria arquivo, ex: touch arquivo.txt
 
 Remover o "arquivo1.bkp" no diretório atual.
 $ rm arquivo1.bkp
