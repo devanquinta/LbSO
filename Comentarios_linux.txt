@@ -6,6 +6,8 @@ nome e senha
 ----------------
 git pull
 
+git clone nomedodiretorio
+
 
 *cd..   , volta ao arquivo pai
 *cd arquivo , abre o arquivo
