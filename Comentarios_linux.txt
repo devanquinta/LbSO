@@ -56,7 +56,7 @@ Força a remoção de todo o diretório /log.
 
 **popd - desempilha a pasta atual 
 
-**mv - move arquivos e/ou pastas 
+**mv - move ou renomeia arquivos e/ou pastas 
 
 Mover  o "arquivo1" para dentro do diretório /home/rodrigo.
 $ mv arquivo1 /home/rodrigo
