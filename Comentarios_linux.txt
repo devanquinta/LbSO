@@ -119,9 +119,11 @@ $ cp -Rv /opt/teamviewer9/ ~rodrigo/
  
 * O "v" no comando é para mostrar na tela o que está sendo executado no momento.
 
-ln – Cria links entre arquivos
+**ln – Cria links entre arquivos
 
-cat – Mostra o conteúdo de um arquivo, ou faz uma cópia deste arquivo, ou uma junção.
+**cat – Mostra o conteúdo de um arquivo, ou faz uma cópia deste arquivo, ou uma junção.
+
+**tac - exibe o conteudo de um arquivo de tras para frente.
 
 **head, tail – Mostra o começo e fim do arquivo
 O comando head, como o nome diz (cabeçalho), mostra o começo de um arquivo. O comando 
@@ -172,12 +174,12 @@ zip -r backup.zip ~
 **Desconpactar 
 unzip backup.zip
 
-O linux possui os principais editores:
+***O linux possui os principais editores:
 - nano, um editor baseado em texto - gedit, um editor gráfico - vi e emacs, 
 dois editores avançados com interfaces gráficas e de texto. 
 
 
-Criando arquivos sem usar um editor
+***Criando arquivos sem usar um editor
 $ echo linha um> myfile 
 $ echo linha dois >> myfile 
 $ echo linha três >> myfile A segunda maneira é usar o cat combinado 
