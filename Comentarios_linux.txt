@@ -165,6 +165,9 @@ Command1 | Command2 | Command3
 find /usr -name gcc
 
  find /usr -type f -name test1
+ 
+**wget faz download de arquivos
+wget http://meusite.com/arquivos/meuarquivo.pdf
 
 **comprimir arquivos zip 
 zip backup *
